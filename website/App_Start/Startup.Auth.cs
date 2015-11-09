@@ -58,11 +58,11 @@ namespace PdfFiddle
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "276380667896-2k7b2sogmsn1ts3qfhkjiqaaf71an70m.apps.googleusercontent.com",
+                ClientSecret = "9CPvYhhjZTCdwDBYEmHfRoZx"
+            });
         }
     }
 }

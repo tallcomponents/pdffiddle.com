@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #eee;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -18,7 +19,92 @@
 
 /* Set width on the form input elements since they're 100% wide by default */
 input,
-select,
-textarea {
+select {
     max-width: 280px;
+}
+
+textarea.content {
+    width: 100%;
+    height: 580px;
+    border: 0;
+}
+
+.buttons {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.buttons.left-pane {
+    margin-left: 45px;
+}
+
+div.pdf {
+    width: 100%;
+    height: 600px;
+    background-color: #ccc;
+}
+
+.table .btn-link {
+    padding: 0;
+}
+
+/* vertical tabs */
+
+.badge {
+  background-color: red;
+}
+
+.tabs-left {
+}
+
+.nav-tabs {
+  float: left;
+  border-bottom: 0;
+}
+.nav-tabs li {
+  float: none;
+  margin: 0;
+}
+.nav-tabs li a {
+  margin-right: 0;
+  border: 0;
+  background-color: #333;
+  border-radius: 0 0 0 0;
+}
+.nav-tabs li a:hover {
+  background-color: #444;
+}
+.nav-tabs .glyphicon {
+  color: #fff;
+}
+.nav-tabs .active .glyphicon {
+  color: #333;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  border: 0;
+}
+
+.tab-content {
+  margin-left: 44px;
+}
+.tab-content .tab-pane {
+  display: none;
+  background-color: #fff;
+  padding: 10px;
+  overflow-y: auto;
+  height: 600px;
+}
+.tab-content .active {
+  display: block;
+}
+
+.list-group {
+  width: 100%;
+}
+.list-group .list-group-item {
+  height: 50px;
+}
+.list-group .list-group-item h4, .list-group .list-group-item span {
+  line-height: 11px;
 }

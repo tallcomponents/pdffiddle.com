@@ -57,5 +57,13 @@ namespace PdfFiddle.Controllers
 
             return Content(guid.ToString());
         }
+
+        public ActionResult Download(string id)
+        {
+            string path = Server.MapPath(string.Format("~/temp/{0}.pdf", id));
+            byte[] bytes = System.IO.File.ReadAllBytes(path);
+            System.IO.File.Delete(path);
+            return File(bytes, "application/pdf");
+        }
     }
-}
+};

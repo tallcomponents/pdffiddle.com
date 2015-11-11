@@ -6,10 +6,34 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap-social.css"> 
+    <link rel="stylesheet" type="text/css" href="~/Content/font-awesome.css" />
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
+    <div class="modal signin" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Sign in</h4>
+                </div>
+                <div class="modal-body">
+                    <a class="btn btn-block btn-social btn-twitter">
+                        <span class="fa fa-twitter"></span> Sign in with Twitter
+                    </a>
+                    <a class="btn btn-block btn-social btn-facebook">
+                        <span class="fa fa-facebook"></span> Sign in with Facebook
+                    </a>
+                    <a class="btn btn-block btn-social btn-google">
+                        <span class="fa fa-google-plus"></span> Sign in with Google
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">

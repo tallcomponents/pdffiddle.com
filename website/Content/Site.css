@@ -10,6 +10,19 @@
     padding-right: 15px;
 }
 
+span.logo {
+   font-family: 'Leckerli One', cursive;
+   font-size: 26px;
+}
+
+span.pdf {
+   color: red;
+}
+
+span.fiddle {
+   color: white;
+}
+
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
